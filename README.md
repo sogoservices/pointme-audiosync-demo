@@ -1,4 +1,7 @@
-This is a reference implementation project for using PointMe Android SDK
-with AudioSync capability. To build and run the project, obtain first and
-SDK and place it under app/libs/ directory. Before build, replace the ********
-with the actual API key provided by PointMe together with the SDK
+This is a reference implementation project for using PointMe Android SDK with AudioSync capability. 
+
+To build and run the project
+- Obtain the SDK package from your PointMe contact
+- Obtain the API key for SDK initialization and replace the *** string with the actual key in DemoActivity and DebugActivity. 
+- Place the SDK under app/libs/ directory
+- Build and run the application 
