@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/switchToDebugView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="27dp"
+        android:paddingEnd="27dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="DebugUI"
+        android:textColor="@color/text_blue"
+        android:textStyle="bold"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/switchToDebugView"
+        app:layout_constraintBottom_toTopOf="@id/tabDots"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabDots"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        app:layout_constraintBottom_toTopOf="@id/searchViewGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp"
+        app:tabBackground="@drawable/ic_tab"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabPadding="0dp"
+        android:padding="0dp"/>
+
+    <FrameLayout
+        android:id="@+id/searchViewGroup"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:id="@+id/searchStoppedView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_button_disabled"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+        <ProgressBar
+            android:id="@+id/searchStartedView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminateTint="@color/green"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/searchFoundView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_match_found"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

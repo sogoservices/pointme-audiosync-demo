@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/deviceLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        tools:text="Device location info: x = 2.45, y = 4.63\nField below size is: width = height = 10 meters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.sogoservices.pointme.debug.DeviceLocationFieldView
+        android:id="@+id/deviceLocationFieldView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deviceLocationTextView"/>
+
+    <Space
+        android:id="@+id/xSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/deviceLocationFieldView"
+        app:layout_constraintTop_toTopOf="@id/deviceLocationFieldView"
+        app:layout_constraintBottom_toBottomOf="@id/deviceLocationFieldView"/>
+
+    <Space
+        android:id="@+id/ySpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/deviceLocationFieldView"
+        app:layout_constraintEnd_toEndOf="@id/deviceLocationFieldView"
+        app:layout_constraintTop_toTopOf="@id/deviceLocationFieldView"/>
+
+    <Space
+        android:id="@+id/xSpaceMargin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="@id/xSpace"
+        app:layout_constraintEnd_toEndOf="@id/xSpace"
+        app:layout_constraintTop_toTopOf="@id/xSpace"
+        app:layout_constraintBottom_toBottomOf="@id/xSpace"/>
+
+    <Space
+        android:id="@+id/ySpaceMargin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="@id/ySpace"
+        app:layout_constraintEnd_toEndOf="@id/ySpace"
+        app:layout_constraintTop_toTopOf="@id/ySpace"
+        app:layout_constraintBottom_toBottomOf="@id/ySpace"/>
+
+    <View
+        android:id="@+id/deviceLocationPoint"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/bg_device_location_point"
+        app:layout_constraintStart_toEndOf="@id/xSpaceMargin"
+        app:layout_constraintTop_toBottomOf="@id/ySpaceMargin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

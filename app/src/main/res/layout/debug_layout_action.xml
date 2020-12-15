@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/green"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/button_text_size"
+    android:textAllCaps="false"
+    android:singleLine="true"
+    android:ellipsize="middle"
+    android:drawableStart="@drawable/ic_unicorn"
+    android:drawablePadding="4dp">
+
+</Button>

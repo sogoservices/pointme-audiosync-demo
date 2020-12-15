@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">PointMe</string>
+    <string name="file_provider_authority">com.sogoservices.pointme.fileprovider</string>
+
+    <string name="azimuth_none">Azimuth: -</string>
+    <string name="azimuth_pattern">Azimuth: %d°</string>
+    <string name="azimuth_pattern_unreliable">Azimuth: %d° (unreliable)</string>
+    <string name="azimuth_pattern_low">Azimuth: %d° (low)</string>
+    <string name="azimuth_pattern_medium">Azimuth: %d° (medium)</string>
+    <string name="azimuth_pattern_high">Azimuth: %d° (high)</string>
+    <string name="azimuth_last_none">Last azimuth: -</string>
+    <string name="azimuth_last_pattern">Last azimuth: %d°</string>
+    <string name="pitch_none">Pitch: -</string>
+    <string name="pitch_pattern">Pitch: %d°</string>
+    <string name="roll_none">Roll: -</string>
+    <string name="roll_pattern">Roll: %d°</string>
+    <string name="latitude_none">Latitude: -</string>
+    <string name="latitude_pattern">Latitude: %f</string>
+    <string name="longitude_none">Longitude: -</string>
+    <string name="longitude_pattern">Longitude: %f</string>
+    <string name="accuracy_none">Accuracy: -</string>
+    <string name="accuracy_pattern">Accuracy: %f</string>
+    <string name="poi_total_none">Available POIs count: -</string>
+    <string name="poi_total_pattern">Available POIs count: %d</string>
+    <string name="device">DEVICE:</string>
+    <string name="poi_count">%d POIs:</string>
+    <string name="beacons_count">%d beacons:</string>
+    <string name="position_changed_none">Pos changed: -</string>
+    <string name="position_changed">Pos changed: %dm</string>
+    <string name="beam_angle_title">Beam angle = </string>
+    <string name="rssi_title">RSSI = </string>
+
+    <string name="config">CONFIG:</string>
+    <string name="config_position_change_threshold">Position threshold: %dm</string>
+    <string name="config_pitch_rotation_threshold">Pitch threshold: %d°</string>
+    <string name="config_azimuth_rotation_threshold">Azimuth threshold: %d°</string>
+    <string name="config_azimuth_deviation">Azimuth deviation: %d°</string>
+    <string name="config_position_change_threshold_none">Position threshold: -</string>
+    <string name="config_pitch_rotation_threshold_none">Pitch threshold: -</string>
+    <string name="config_azimuth_rotation_threshold_none">Azimuth threshold: -</string>
+    <string name="config_azimuth_deviation_none">Azimuth deviation: -</string>
+
+    <string name="permissions_required">Please, provide access to the location permission through the app settings.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="demo_description">Point your phone at the desired target</string>
+
+    <string name="no_value_string">no value</string>
+
+    <string name="beacon_data_item_beam_angle">BEAM ANGLE</string>
+    <string name="beacon_data_item_latest_rssi">LATEST RSSI</string>
+    <string name="beacon_data_item_average_rssi">AVG. RSSI</string>
+
+    <string name="device_location_info">Device location info: x = %s, y = %s\nField size is: width = height = 10 meters</string>
+</resources>
